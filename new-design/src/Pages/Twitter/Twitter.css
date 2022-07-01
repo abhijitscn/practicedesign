@@ -1,0 +1,157 @@
+
+
+.maindiv{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.upperdiv{
+    display: flex;
+}
+.leftdiv{
+    flex-basis: 50%;
+    background-image:url('./bg.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rightdiv{
+    flex-basis: 50%;
+    background-color:black;
+    padding: 52px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.rone{
+    flex-grow:1
+}
+.rone p{
+    font-size: 4rem;
+    color: white;
+    font-family: verdana;
+    font-weight: 700;
+
+}
+.rtwo{
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+}
+.joinText{
+    font-size: 2rem;
+    color: #CBC4C4;
+    font-family: verdana;
+    font-weight: 700;
+}
+.rtwo button{
+    height: 2.8rem;
+    width: 19rem;
+    margin: 10px 0;
+    border-radius: 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-family: verdana;
+    color: #535658;
+    font-size: 0.8rem;
+    font-weight: 700;
+
+}
+.emailbutton{
+    background-color: #0F9AFB;
+    color:white;
+    cursor: pointer;
+    font-family: verdana;
+}
+.agreeText{
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.54);
+    font-weight: 400;
+    font-family: verdana;
+}
+.rthree{
+    flex-grow:1;
+}
+.rthree p{
+    color: #E7E5E5;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: verdana;
+}
+.rthree button{
+    height: 2.8rem;
+    width: 19rem;
+    background-color: black;
+    border: 1px solid rgba(255, 255, 255, 0.72);
+    border-radius: 24.5px;
+    color:#0F9AFB ;
+    cursor: pointer;
+    font-family: verdana;
+}
+
+.footerdiv{
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.footerdiv ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-basis: 100%;
+    padding: 0 ;
+    margin: 0;
+    flex-wrap: wrap;
+}
+.footerdiv ul li{
+    color:#CBC4C4;
+    font-size: 13px;
+    font-family: verdana;
+    padding: 5px;
+}
+
+
+/* p::before{
+    content:'';
+    width: 9rem;
+    height: .2rem;
+    left: -50%;
+    top:50%;
+    transform: translateY(-50%);
+    position: absolute;
+    background: red; 
+}
+p::after{
+    content:'';
+    width: 9rem;
+    height: .2rem;
+    right: 0%;
+    top:50%;
+    transform: translateY(-50%);
+    position: absolute;
+    background: red; 
+} */
+
+@media (max-width:768px){
+    .upperdiv{
+        flex-direction: column;
+    }
+    
+    .rone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .rtwo{
+        align-items: center;
+    }
+    .rthree{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
